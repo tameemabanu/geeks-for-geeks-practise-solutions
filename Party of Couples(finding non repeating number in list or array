@@ -1,0 +1,13 @@
+class Solution:
+    def findSingle(self, N, arr):
+        # code here
+        ans = 0
+        for i in range(0, N):
+            ans = ans ^ arr[i]
+        return ans
+        
+^  IS XOR Operation
+why should we do Xor to perform this code:
+
+The XOR operation has a property such that if you XOR a number with itself, the answer becomes zero. 
+So, we can do the XOR of all the elements in the array one by one, and then the final result would be our number that occurs once in the array.
