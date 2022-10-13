@@ -1,0 +1,18 @@
+Finding uncommon characters form both strings
+
+def UncommonChars(self,A, B):
+        #code here
+        s=""
+        A.lower()
+        B.lower()
+        alpha="abcdefghijklmnopqrstuvwxyz"
+        for i in alpha:
+            if i in A and i in B:
+                continue
+            if i in A or i in B:
+                s+=i
+        #return s
+        if(len(s)<1):
+            return -1
+        return s
+
