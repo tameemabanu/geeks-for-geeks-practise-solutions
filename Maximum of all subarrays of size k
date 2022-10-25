@@ -1,0 +1,20 @@
+Maximum of all subarrays of size k
+
+arr=[8,5,10,7,9,4,15,12,90,13]
+s=0
+k=4
+temp=k
+while(len(arr) > 0):
+    l=arr[s:k]
+    length=len(l)
+    if(length < temp):
+        break
+    else:
+        print(max(l),end=" ")
+        s+=1
+        k+=1
+        
+        
+        
+        
+Output : 10 10 10 15 15 90 90 
